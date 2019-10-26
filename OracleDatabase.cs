@@ -8,7 +8,7 @@ namespace DbConnection_App
         {
             get
             {
-                return ConnectionString;
+                return this.ConnectionString;
             } 
             
             set
@@ -21,7 +21,7 @@ namespace DbConnection_App
         {
             get
             {
-                return Timeout;
+                return this.Timeout;
             } 
             
             set

@@ -49,9 +49,9 @@ namespace DbConnection_App
         static void Main()
         {
             var sqlServer = new SqlDatabase();
-            var oracleServer = new OracleDatabase();
-
             sqlServer.ConnectToDb();
+
+            var oracleServer = new OracleDatabase();
             oracleServer.ConnectToDb();
         }
     }
