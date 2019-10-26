@@ -1,0 +1,11 @@
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\obj\Debug\netcoreapp2.1\DbConnection_App.csprojAssemblyReference.cache
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\obj\Debug\netcoreapp2.1\DbConnection_App.csproj.CoreCompileInputs.cache
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\obj\Debug\netcoreapp2.1\DbConnection_App.AssemblyInfoInputs.cache
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\obj\Debug\netcoreapp2.1\DbConnection_App.AssemblyInfo.cs
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\bin\Debug\netcoreapp2.1\DbConnection_App.deps.json
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\bin\Debug\netcoreapp2.1\DbConnection_App.runtimeconfig.json
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\bin\Debug\netcoreapp2.1\DbConnection_App.runtimeconfig.dev.json
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\bin\Debug\netcoreapp2.1\DbConnection_App.dll
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\bin\Debug\netcoreapp2.1\DbConnection_App.pdb
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\obj\Debug\netcoreapp2.1\DbConnection_App.dll
+C:\Users\Tony Chacon\C#_Projects\DbConnection_App\obj\Debug\netcoreapp2.1\DbConnection_App.pdb

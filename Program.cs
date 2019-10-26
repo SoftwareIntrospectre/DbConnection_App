@@ -46,9 +46,13 @@ namespace DbConnection_App
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            var sqlServer = new SqlDatabase();
+            var oracleServer = new OracleDatabase();
+
+            sqlServer.ConnectToDb();
+            oracleServer.ConnectToDb();
         }
     }
 }
