@@ -49,10 +49,12 @@ namespace DbConnection_App
         static void Main()
         {
             var sqlServer = new SqlDatabase();
-            sqlServer.ConnectToDb();
+            sqlServer.OpenDbDonnection();
+            sqlServer.CloseDbConnection();
 
             var oracleServer = new OracleDatabase();
-            oracleServer.ConnectToDb();
+            oracleServer.OpenDbDonnection();
+            oracleServer.CloseDbConnection();
         }
     }
 }

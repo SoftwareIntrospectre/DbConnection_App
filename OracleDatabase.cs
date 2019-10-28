@@ -24,7 +24,7 @@ namespace DbConnection_App
             set{;}
         }
         
-        public override void ConnectToDb()
+        public override void OpenDbDonnection()
         {
 
             if(ConnectionString == null)
@@ -34,11 +34,15 @@ namespace DbConnection_App
 
             else
             {
-                Console.WriteLine("Connection opened for Oracle database.");
-                Console.WriteLine("Oracle Server Connection String is: " + ConnectionString);
-                Console.Write("Oracle Server Timeout is:" + Timeout + "\n\n");
-
+                Console.WriteLine("Opened connection to Oracle database.");
+                Console.WriteLine("Oracle Connection String is: " + ConnectionString);
             }
+        }
+
+        public override void CloseDbConnection()
+        {
+            Console.WriteLine("Oracle Server Timeout is: " + Timeout);
+            Console.WriteLine("Closed connection to Oracle database." + "\n");
         }
     }
 }

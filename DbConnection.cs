@@ -8,6 +8,8 @@ namespace DbConnection_App
 
         public abstract TimeSpan Timeout {get; set;}
 
-        public abstract void ConnectToDb();
+        public abstract void OpenDbDonnection();
+        public abstract void CloseDbConnection();
+
     }
 }

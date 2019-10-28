@@ -26,7 +26,7 @@ namespace DbConnection_App
             set{;}
         }
         
-        public override void ConnectToDb()
+        public override void OpenDbDonnection()
         {
 
             if(ConnectionString == null)
@@ -36,10 +36,15 @@ namespace DbConnection_App
 
             else
             {
-                Console.WriteLine("Connection opened for SQL Server database.");
+                Console.WriteLine("Opened connection to SQL Server database.");
                 Console.WriteLine("SQL Server Connection String is: " + ConnectionString);
-                Console.Write("SQL Server Timeout is:" + Timeout + "\n\n");
             }
+        }
+
+        public override void CloseDbConnection()
+        {
+        Console.WriteLine("SQL Server Timeout is: " + Timeout);
+        Console.WriteLine("Closed connection to SQL Server database." + "\n");
         }
     }
 }
