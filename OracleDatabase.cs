@@ -8,27 +8,20 @@ namespace DbConnection_App
         {
             get
             {
-                return this.ConnectionString;
+                return "oraclestring";
             } 
             
-            set
-            {
-                ConnectionString = "oracle";
-            }
+            set{;}
         }
         
         public override TimeSpan Timeout 
         {
             get
             {
-                return this.Timeout;
+                return DateTime.Now.AddSeconds(5) - DateTime.Now;
             } 
             
-            set
-            {
-                Timeout = DateTime.Now.AddSeconds(5) - DateTime.Now;
-                Console.WriteLine($"Timeout is: {Timeout} for SQL Server");
-            }
+            set{;}
         }
         
         public override void ConnectToDb()
@@ -42,7 +35,9 @@ namespace DbConnection_App
             else
             {
                 Console.WriteLine("Connection opened for Oracle database.");
-                Console.WriteLine(ConnectionString);
+                Console.WriteLine("Oracle Server Connection String is: " + ConnectionString);
+                Console.Write("Oracle Server Timeout is:" + Timeout + "\n\n");
+
             }
         }
     }

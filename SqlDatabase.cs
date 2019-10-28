@@ -9,27 +9,21 @@ namespace DbConnection_App
         {
             get
             {
-                return this.ConnectionString;
+                return "sqlserver";
             } 
             
             set
-            {
-                ConnectionString = "sqlserver";
-            }
+            {;}
         }
         
         public override TimeSpan Timeout 
         {
             get
             {
-                return this.Timeout;
+                return DateTime.Now.AddSeconds(10) - DateTime.Now;
             } 
             
-            set
-            {
-                Timeout = DateTime.Now.AddSeconds(10) - DateTime.Now;
-                Console.WriteLine($"Timeout is: {Timeout} for SQL Server");
-            }
+            set{;}
         }
         
         public override void ConnectToDb()
@@ -43,7 +37,8 @@ namespace DbConnection_App
             else
             {
                 Console.WriteLine("Connection opened for SQL Server database.");
-                Console.WriteLine(ConnectionString);
+                Console.WriteLine("SQL Server Connection String is: " + ConnectionString);
+                Console.Write("SQL Server Timeout is:" + Timeout + "\n\n");
             }
         }
     }
