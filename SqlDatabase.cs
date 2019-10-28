@@ -12,8 +12,7 @@ namespace DbConnection_App
                 return "sqlserver";
             } 
             
-            set
-            {;}
+            set{;}
         }
         
         public override TimeSpan Timeout 
@@ -22,6 +21,7 @@ namespace DbConnection_App
             {
                 return DateTime.Now.AddSeconds(10) - DateTime.Now;
             } 
+            
             
             set{;}
         }
