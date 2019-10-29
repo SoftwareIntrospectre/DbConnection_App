@@ -8,7 +8,7 @@ namespace DbConnection_App
         {
             get
             {
-                return "oraclestring";
+                return "Data Source=MyOracleDB;User Id=myUsername;Password=myPassword;Integrated Security=no;";
             } 
             
             set{;}
@@ -26,23 +26,19 @@ namespace DbConnection_App
         
         public override void OpenDbDonnection()
         {
-
-            if(ConnectionString == null)
-            {
-                throw new ArgumentNullException();
-            }
-
-            else
-            {
-                Console.WriteLine("Opened connection to Oracle database.");
-                Console.WriteLine("Oracle Connection String is: " + ConnectionString);
-            }
+            Console.WriteLine("Opened connection to Oracle database.");
+            Console.WriteLine("Oracle Connection String is: " + ConnectionString);
         }
 
         public override void CloseDbConnection()
         {
             Console.WriteLine("Oracle Server Timeout is: " + Timeout);
             Console.WriteLine("Closed connection to Oracle database." + "\n");
+        }
+
+        public override void ReadInstruction()
+        {
+            Console.WriteLine("Instruction: Data Source=MyOracleDB;User Id=myUsername;Password=myPassword;Integrated Security=no;");
         }
     }
 }
