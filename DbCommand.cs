@@ -6,27 +6,26 @@ namespace DbConnection_App
     {
         public DbCommand(SqlDatabase sql)
         {
-            if(sql.ConnectionString == null || sql.ConnectionString == "")
-            {
-                throw new ArgumentNullException();
-            }
-
              Execute(sql);
         }
         public DbCommand(OracleDatabase oracle)
         {
-            if(oracle.ConnectionString == null || oracle.ConnectionString == "")
-            {
-                throw new ArgumentNullException();
-            }
 
             Execute(oracle);
         }
         public void Execute(DbConnection dbConnect)
         {
-            dbConnect.OpenDbDonnection();
-            dbConnect.ReadInstruction();
-            dbConnect.CloseDbConnection();
+            if(dbConnect.ConnectionString == null || dbConnect.ConnectionString == "")
+            {
+                throw new ArgumentNullException();
+            }
+
+            else
+            {
+                dbConnect.OpenDbDonnection();
+                dbConnect.ReadInstruction();
+                dbConnect.CloseDbConnection();
+            }
         }
     }
 }
