@@ -10,7 +10,6 @@ namespace DbConnection_App
         }
         public DbCommand(OracleDatabase oracle)
         {
-
             Execute(oracle);
         }
         public void Execute(DbConnection dbConnect)
