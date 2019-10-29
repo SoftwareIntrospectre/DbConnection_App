@@ -8,7 +8,7 @@ namespace DbConnection_App
         {
             get
             {
-                return "Data Source=MyOracleDB;User Id=myUsername;Password=myPassword;Integrated Security=no;";
+                return "oracleDB";
             } 
             
             set{;}
